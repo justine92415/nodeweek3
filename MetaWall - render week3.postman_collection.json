@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b7e30f83-7eb6-4c1d-a9b6-d9effc8599a6",
+		"_postman_id": "66df1010-3dce-4955-875c-77d05f2fab05",
 		"name": "MetaWall - render week3",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "23754648"
@@ -33,7 +33,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"content\":\"測試文章-render week3\",\n    \"name\":\"王大明\"\n}",
+					"raw": "{\n    \"content\":\"測試文章-render\",\n    \"name\":\"王大明\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -56,6 +56,36 @@
 			"response": []
 		},
 		{
+			"name": "編輯一筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\":\"測試文章-render\",\n    \"name\":\"王大明 editedit2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek3.onrender.com/posts/66227a662253870baa454a9c",
+					"protocol": "https",
+					"host": [
+						"nodeweek3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"66227a662253870baa454a9c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "刪除一筆貼文",
 			"request": {
 				"method": "DELETE",
@@ -70,7 +100,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://nodeweek3.onrender.com/posts/6620a47e43b9d673d4775a39",
+					"raw": "https://nodeweek3.onrender.com/posts/66227823a760c0395a4388b1",
 					"protocol": "https",
 					"host": [
 						"nodeweek3",
@@ -79,7 +109,36 @@
 					],
 					"path": [
 						"posts",
-						"6620a47e43b9d673d4775a39"
+						"66227823a760c0395a4388b1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek3.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
 					]
 				}
 			},
