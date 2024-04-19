@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "b7e30f83-7eb6-4c1d-a9b6-d9effc8599a6",
+		"name": "MetaWall - render week3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23754648"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nodeweek3.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\":\"測試文章-render week3\",\n    \"name\":\"王大明\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek3.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek3.onrender.com/posts/6620a47e43b9d673d4775a39",
+					"protocol": "https",
+					"host": [
+						"nodeweek3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6620a47e43b9d673d4775a39"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
